@@ -1,0 +1,5 @@
+package com.rafael.dsmeta.config;
+
+public class SecurityConfig {
+
+}
