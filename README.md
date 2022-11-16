@@ -31,4 +31,7 @@ yarn add react-datepicker@4.8.0 @types/react-datepicker@4.4.2
 </plugin>
 ````
 
-
+````
+consulta url paginada
+http://localhost:8080/sales/page?minDate=2002-01-01&maxDate=2022-03-01
+````

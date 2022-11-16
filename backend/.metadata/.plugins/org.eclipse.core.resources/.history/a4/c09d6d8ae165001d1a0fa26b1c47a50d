@@ -1,0 +1,26 @@
+package com.rafael.dsmeta.service;
+
+import java.awt.print.Pageable;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
+
+import com.rafael.dsmeta.intites.Sale;
+import com.rafael.dsmeta.repositories.SalesRepository;
+
+@Service
+public class SaleServices {
+
+	@Autowired
+	public SalesRepository repo;
+
+	
+
+	public Page<Sale> findAllPage(Pageable pageable) {
+
+		return repo.findAll(pageable);
+	}
+
+}

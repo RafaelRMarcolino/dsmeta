@@ -1,0 +1,36 @@
+package com.rafael.dsmeta.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rafael.dsmeta.intites.Sale;
+import com.rafael.dsmeta.service.SaleServices;
+
+@RestController
+@RequestMapping(value = "/sales")
+public class SaleController {
+
+	@Autowired
+	public SaleServices service;
+	
+	@GetMapping()
+	public ResponseEntity<List<Sale>> findAll(){
+		
+		List<Sale> obj = service.findAll();
+		return ResponseEntity.ok().body(obj);
+	}
+	
+	@GetMapping(value = "/page")
+	public Page<Sale> findPage(Pageable pageable){
+		
+		
+		return service.findPage(pageable);
+	}
+}
