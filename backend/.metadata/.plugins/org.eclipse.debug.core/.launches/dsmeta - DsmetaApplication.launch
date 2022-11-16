@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.springframework.ide.eclipse.boot.launch">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/dsmeta/src/main/java/com/rafael/dsmeta/DsmetaApplication.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+        <mapEntry key="TWILIO_KEY" value="24ee70f9ed529f36ba36231b7aa20ca1"/>
+        <mapEntry key="TWILIO_PHONE_FROM" value="+13149376115"/>
+        <mapEntry key="TWILIO_PHONE_TO" value="+5511958222759"/>
+        <mapEntry key="TWILIO_SID" value="AC734003f5437b110ac74c1d67eaeb41d9"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenClassPathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.rafael.dsmeta.DsmetaApplication"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="dsmeta"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenSourcePathProvider"/>
     <stringAttribute key="process_factory_id" value="org.springframework.ide.eclipse.boot.launch.process.BootProcessFactory"/>
+    <booleanAttribute key="spring.boot.ansi.console" value="true"/>
+    <stringAttribute key="spring.boot.app.properties" value=""/>
     <booleanAttribute key="spring.boot.auto-connect" value="true"/>
+    <booleanAttribute key="spring.boot.dash.hidden" value="false"/>
+    <booleanAttribute key="spring.boot.debug.enable" value="false"/>
+    <booleanAttribute key="spring.boot.fast.startup" value="true"/>
     <booleanAttribute key="spring.boot.jmx.enable" value="true"/>
     <booleanAttribute key="spring.boot.lifecycle.enable" value="true"/>
     <stringAttribute key="spring.boot.lifecycle.termination.timeout" value="15000"/>
     <booleanAttribute key="spring.boot.livebean.enable" value="false"/>
     <stringAttribute key="spring.boot.livebean.port" value="0"/>
+    <stringAttribute key="spring.boot.profile" value=""/>
 </launchConfiguration>
