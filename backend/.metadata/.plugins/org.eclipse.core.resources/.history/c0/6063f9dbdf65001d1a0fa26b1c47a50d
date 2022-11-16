@@ -1,0 +1,20 @@
+package com.rafael.dsmeta.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.rafael.dsmeta.intites.Sale;
+import com.rafael.dsmeta.repositories.SalesRepository;
+
+public class SaleServices {
+
+	@Autowired
+	public SalesRepository repo;
+	
+	public List<Sale> findAll(){
+		
+		return repo.findAll();
+	}
+
+}

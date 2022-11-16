@@ -1,0 +1,5 @@
+package com.rafael.dsmeta.repositories;
+
+public class SalesRepository {
+
+}
